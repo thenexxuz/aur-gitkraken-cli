@@ -2,7 +2,7 @@
 
 pkgname=gitkraken-cli
 pkgver=3.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="The intuitive, fast, and beautiful cross-platform Git client."
 url="https://www.gitkraken.com/"
 provides=('gitkraken')
@@ -20,5 +20,5 @@ sha256sums=('0bdaf5985b2aec3d9b8d3ff2424d740284f6cf9758556f760e5460dd280635bf')
 
 package() {
     install -d "$pkgdir"/usr/local/bin
-    cp -R "$srcdir"/gk "$pkgdir"/usr/local/bin/
+    cp -R "$srcdir"/gk_"$pkgver"_linux_amd64/gk "$pkgdir"/usr/local/bin/
 }
